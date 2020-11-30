@@ -1,0 +1,284 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Nov 2020, 12:47:56
+    Author     : teo
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Nov 2020, 09:58:26
+    Author     : teo
+*/
+*   /* Star means all elements*/
+{
+  box-sizing: border-box;/*removes the padding from the rest of the elements */
+   margin:0;
+  padding: 0;
+}
+body
+{
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin:0;
+}
+/*Header+nav*/
+header
+{
+  height: 100px;
+  background: #38454d;
+  color:white;
+  
+  float: left;
+ width: 100%;
+ 
+ align-content: center;
+ align-items: center;
+ display:flex;
+  flex-direction: column;
+ 
+border:1px solid red;
+}
+/* TOP NAV BAR*/
+.top
+{
+width: 100%;
+padding-right:50px;
+padding-left: 15px;
+height: 49px;
+border-bottom: 1px solid white;
+
+}
+.row
+{
+display:flex;
+flex-wrap: wrap;
+height: 50px;
+float: right;
+/*border:1px solid green;*/
+width: 40%;
+}
+.row a
+{
+  color:white;
+  display:flex;
+flex-wrap: wrap;
+text-decoration: none; 
+font-weight: bold ;
+}
+/*.active
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #8d9faa;
+    background-size: auto;
+    opacity: 1;
+    visibility: visible;
+    background-size: 25px;
+    text-align: center;
+    left: 15px;
+    bottom: 10px;
+}*/
+
+
+.row a:hover
+{
+  text-decoration: underline; 
+  line-height: 20px;
+}
+
+.row li
+{
+  width: 20%;
+  text-transform: uppercase;
+}
+.row ul
+{
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+  display:flex;
+   height:40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.row span
+{
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/*BOTTOM NAV BAR*/
+.bottom
+{
+  width: 100%;
+  
+}
+
+.menu-area
+{
+  width: 80%;
+  float:right;
+  
+/*  border:1px solid red;*/
+}
+.menu-area a
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #38454d;
+  height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+ 
+}
+.menu-area a:hover
+{
+  background: grey;
+  color:#fff;
+}
+.menu-area ul
+{
+  list-style: none;
+  display:flex;
+}
+.menu-area li
+{
+ position: relative;
+  width: 100%;
+}
+.dropdown-1
+{
+  position:  absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+.menu-area li:hover .dropdown-1>li
+{
+  display: block;
+}
+.dropdown-1>li
+{
+  display: none;
+}
+.dropdown-2
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  left:100%;
+  width: 100%;
+}
+.dropdown-1 li:hover .dropdown-2>li
+{
+  display: block;
+}
+.dropdown-2>li
+{
+  display: none;
+}
+
+
+#container
+{
+  display:flex;
+  flex:1; /* child property:it expand to the sapce left over(from header to footer)*/
+}
+#container>main
+{
+  
+  flex:1; /* expands into the space left over(from nav and aside below ,i.e. 60vw)*/
+}
+#container>nav,#container>aside
+{
+  flex:0 0 20vw;/*  shorthand property:flex-grow flex-shrink flex-basis*/
+  background: beige;
+}
+#container>nav
+{
+  order:-1;
+}
+
+  main, aside {
+    	padding: 1em;
+}
+/* *****************************Start nav styling******************************* */
+
+/* *****************************End nav styling******************************* */
+
+/*footer*/
+footer
+{
+  height: 30vh;
+   background: #38454d;
+  color:white;
+}
+.footertop
+{
+  border-bottom: 1px solid white;
+  height: 7vh;
+  width: 100%;
+/*  border:1px solid red;*/
+}
+.footertop .socials a
+  {
+    float:right;
+    color:grey;
+
+    width: 30px;
+    padding-top: 5px;
+    display: inline-block;
+    transition: all 0.25s;
+  }
+  .footertop .socials a :hover 
+  {
+    color: white;
+    transition: all 0.3s;
+  }
+.footerbottom
+{
+  height: 15vh;
+  width: 100%;
+/*  border:1px solid red;*/
+}
+.footnav
+{
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  align-content: center;
+  align-items: center;
+/*  border:1px solid red;*/
+  background: #44545e;
+}
+.footerbottom ul
+{
+  
+}
+.footerbottom li
+{
+  
+  
+  padding-top: 10px;
+  display: inline-block;
+  
+}
+h3
+{
+  color:grey;
+}

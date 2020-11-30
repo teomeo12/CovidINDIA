@@ -1,0 +1,352 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-Nov-2020, 4:10:12 pm
+    Author     : SIYA
+*/
+
+/*.imgarea img{
+    background: url(../styles/campuss.jpg) no-repeat;
+    background-size: cover;
+    filter:blur(2px);
+}*/
+
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+}
+header img{
+    width:200px;
+    height:120px;
+    float:left;
+    margin-left:30%;
+   
+}
+header{
+    display: flex;
+align-content: center;
+align-items: center;
+}
+header h1{
+    font-family:Arial;
+}
+/* TOP NAV BAR*/
+.navcontainer
+{
+height: 20vh;
+  background: #38454d;
+  color:white;
+ width: 100%;
+ align-content: center;
+ align-items: center;
+ display:flex;
+  flex-direction: column;
+ 
+/*border:1px solid red;*/
+}
+.top
+{
+width: 100%;
+
+/*height: 10vh;*/
+border-bottom: 1px solid white;
+display:flex;
+
+}
+.row
+{
+display:flex;
+flex-wrap: wrap;
+height: 10vh;
+float: right;
+/*border:1px solid green;*/
+width: 40%;
+}
+.row a
+{
+  float: right;
+  color:white;
+  display:flex;
+flex-wrap: wrap;
+text-decoration: none; 
+font-weight: bold ;
+}
+/*.active
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #8d9faa;
+    background-size: auto;
+    opacity: 1;
+    visibility: visible;
+    background-size: 25px;
+    text-align: center;
+    left: 15px;
+    bottom: 10px;
+}*/
+
+
+.row a:hover
+{
+  text-decoration: underline; 
+  line-height: 20px;
+}
+
+.row li
+{
+  width: 20%;
+  text-transform: uppercase;
+}
+.row ul
+{
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+  display:flex;
+   height:40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.row span
+{
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/*BOTTOM NAV BAR*/
+.bottom
+{
+  width: 100%;
+   height: 15vh;
+  
+}
+
+.menu-area
+{
+  width: 100%;
+  float:right;
+  height:40px;
+  
+/*  border:1px solid red;*/
+}
+.menu-area a
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #38454d;
+  height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+ 
+}
+.menu-area a:hover
+{
+  background: grey;
+  color:#fff;
+}
+.menu-area ul
+{
+  list-style: none;
+  display:flex;
+  margin-top: 0px;
+margin-bottom: 0px;
+height: 15vh;
+padding: 0;
+}
+.menu-area li
+{
+ position: relative;
+  width: 100%;
+}
+.dropdown-1
+{
+  position:  absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+.menu-area li:hover .dropdown-1>li
+{
+  display: block;
+}
+.dropdown-1>li
+{
+  display: none;
+}
+.dropdown-2
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  left:100%;
+  width: 100%;
+}
+.dropdown-1 li:hover .dropdown-2>li
+{
+  display: block;
+}
+.dropdown-2>li
+{
+  display: none;
+}
+
+
+.quote{
+   background: #E0C0C7;
+    padding-left:50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+/*    padding-right: 40px;*/
+    margin:0; 
+}
+.quote img{
+    float : right;
+    padding-right: 35px;
+}
+.quote a:hover{
+    background: black;
+    color:white;
+    padding:20px;
+}
+.quote a{
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+
+
+
+.mainmenu  {
+    display:flex;
+    background:#424254;
+    justify-content: center;
+    align-content: center;
+    margin:0;
+    padding: 0;
+}
+.mainmenu ul{
+    list-style: none;
+    display:flex;
+    width:100%;
+}
+.mainmenu ul li{
+    width:100%;
+    position: relative;
+}
+.mainmenu a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.container {
+ display:flex;
+}
+.container>main{
+   
+   width:75%;
+   padding:20px;
+}
+.container >main img{
+    margin-left : 15%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background: #AB3E5B ;
+    height:160vh;
+    width:30%;
+}
+.menu ul{
+   list-style: none;
+   padding:0;
+}
+.menu a{
+    text-decoration: none;
+     color:white;
+     padding:20px;
+}
+.menu ul li {
+    position:relative;
+   width: 100%;
+   border:solid black ;
+   padding: 20px 0px ;
+   margin-bottom: 50px;
+   text-align: center;
+   margin-top: 30px;
+}
+
+
+footer
+{
+  height: 30vh;
+   background: #38454d;
+  color:white;
+}
+.footertop
+{
+  border-bottom: 1px solid white;
+  height: 7vh;
+  width: 100%;
+/*  border:1px solid red;*/
+}
+.footertop .socials a
+  {
+    float:right;
+    color:grey;
+
+    width: 30px;
+    padding-top: 5px;
+    display: inline-block;
+    transition: all 0.25s;
+  }
+  .footertop .socials a :hover 
+  {
+    color: white;
+    transition: all 0.3s;
+  }
+.footerbottom
+{
+  height: 15vh;
+  width: 100%;
+/*  border:1px solid red;*/
+}
+.footnav
+{
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  align-content: center;
+  align-items: center;
+/*  border:1px solid red;*/
+  background: #44545e;
+}
+.footerbottom ul
+{
+  
+}
+.footerbottom li
+{
+  
+  
+  padding-top: 10px;
+  display: inline-block;
+  
+}
+h3
+{
+  color:grey;
+}
